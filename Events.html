@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InvestNook</title>
+    <link rel="stylesheet" href="style2.css" />
+    <style>
+      
+      .header {
+        color: white;
+        text-align: center;
+      }
+
+      .navbar {
+        background-color: black;
+      }
+
+      .logo {
+        color: white;
+      }
+      .menu a {
+        color: white;
+      }
+
+      .contents p {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 25px;
+        color: white;
+      }
+
+      .button-container {
+        margin-top: 20px; /* Adjusted margin for better spacing */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center buttons horizontally */
+      }
+
+      .button1,
+      .button2,
+      .button3 {
+        margin: 10px 0;
+        height: 70px;
+        width: 250px;
+        font-size: 20px;
+        border-radius: 35px;
+      }
+
+      .partners h2 {
+        margin-top: 50px;
+        text-align: center;
+      }
+
+      .Partner-logos {
+        margin-top: 20px; /* Adjusted margin for better spacing */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 200px;
+      }
+
+      img {
+        margin: 0 10px; /* Add space between partner logos */
+      }
+
+      .footer {
+        background-color: black;
+        color: white;
+      }
+
+      .footer a {
+        color: white;
+      }
+
+      .partners {
+        margin-top: 40px;
+      }
+      body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Ensure you have imported the Inter font */
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: beige;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid beige;
+}
+    </style>
+  </head>
+  <body style="background-color: black">
+    <header>
+      <div class="logo">
+          <a href="#" style="font-size: 30px; color: beige;">INVE$TNOOK</a>
+      </div>
+      <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Learn.html">Learn</a></li>
+            <li><a href="Investor Panel.html">Investor Panel</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Product_retrive.php">Products</a></li>
+            <li><a href="login.html">Sign In</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <div class="header">
+      <h1>InvestNook Virtual Event</h1>
+    </div>
+
+    <div class="contents">
+      <p>
+        This Allows Investors And Small Businesses To Create And Join Virtual
+        Events
+      </p>
+      <div class="button-container">
+        <button class="button1" onclick="create_event()">
+          Create an Event
+        </button>
+        <button class="button2" onclick="join_event()">Join an Event</button>
+        <div class="eventdetails">
+          <button class="button3" onclick="eventdetails()">
+            Event Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="partners">
+      <h2>Our Supported Virtual Event Partners</h2>
+      <div class="Partner-logos">
+        <a href="https://zoom.us/"
+          ><img src="zoom.jpg" height="50px" width="50px" alt="zoom"
+        /></a>
+        <a href="https://meet.google.com/"
+          ><img src="gmeet.jpg" height="50px" width="50px" alt="gmeet"
+        /></a>
+        <a
+          href="https://www.microsoft.com/en-in/microsoft-teams/group-chat-software"
+          ><img src="teams.jpg" height="50px" width="50px" alt="teams"
+        /></a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-logo">InvestNook</div>
+      <p>
+        &copy; 2024 InvestNook. All rights reserved. |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
+
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".menu").classList.toggle("active");
+        });
+
+      function create_event() {
+        window.location.href = "EventForm.html";
+      }
+
+      function join_event() {
+        var choice = prompt(
+          "Enter the platform where you want to join the virtual meeting"
+        );
+        if (choice == "zoom") {
+          window.location.href = "https://zoom.us/";
+        }
+
+        if (choice == "gmeet" || choice == "googlemeet") {
+          window.location.href = "https://meet.google.com/";
+        }
+        if (choice == "teams" || choice == "ms teams") {
+          window.location.href =
+            "https://www.microsoft.com/en-in/microsoft-teams/group-chat-software";
+        }
+      }
+
+      function eventdetails() {
+        window.location.href = "eventdetails.php";
+      }
+    </script>
+  </body>
+</html>

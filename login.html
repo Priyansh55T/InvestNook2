@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/f17af4fc0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="perent">
+
+      <nav class="n-bar">
+        <div class="G-title">
+          <img src="assets/logo.png" alt="logo" class="logo" />
+        </div>
+        <div class="Acc-btn">
+          <!-- <button class="btn" style="display:">LOGIN</button> -->
+          <!-- <button class="btn" style="display:">SIGNUP</button> -->
+        </div>
+      </nav>
+      <main>
+        <div class="main-div">
+          <div class="container">
+            <div class="heading">
+              <center><span class="headtext"> Login </span></center>
+            </div>
+            <div>
+              <form method="post" action="login.php">
+                <i class="fa-solid fa-envelope fa-xl"></i>
+                <label for="email" class="lbl">Email</label>
+                <br />
+                <input type="email" name="email" id="email" placeholder="Enter Email"/>
+                <br />
+                <i class="fa-solid fa-key fa-xl"></i>
+                <label for="password" class="lbl">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password"/>
+               <a id="rtxt" href="" class="green">Forgot Password?<a>
+                <center>
+                  <input type="submit" name="LOIGN" class="button" class="lbl" value="LOGIN"/>
+                </center>
+              </form>
+              <center style="margin: 10px;">
+                <p>Or Signup Using</p>
+                <br>
+              <span class="fa-brands fa-google fa-2xl" id="slogo"></span>
+              <span class="fa-brands fa-facebook fa-2xl" id="slogo"></span>
+              <p style="margin-top: 30px;">Don't have an Acount? <a href="signup.html" class="green">Sign up</a></p>
+              </center>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

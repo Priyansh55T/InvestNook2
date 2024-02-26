@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestNook - Products</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #4CAF50;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .product-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 100px;
+        }
+
+        h1, p {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        .product-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-form label {
+            margin-bottom: 12px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .product-form input,
+        .product-form textarea,
+        .product-form select,
+        .product-form button {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .product-form button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-form button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #4CAF50;
+        }
+
+        .footer-logo {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="#">INVE<span style="font-size: 40px;background-image: linear-gradient(to right, #2C3E50, #797975);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;">$</span>TNOOK</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Investor Panel.html">Investor Panel</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Product_retrive.php">Products</a></li>
+            <li><a href="Learn.html">Learn</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="product-container">
+        <h1>Submit Your Product Idea</h1>
+        <p>Connect with investors by sharing details about your product.</p>
+        <form class="product-form" action="Productsdatabase.php" method="post">
+            <!-- Your form inputs here -->
+
+            <label for="productName">Product Name</label>
+            <input type="text" name="p_n" required>
+
+            <label>Product Type</label>
+            <input type="text" name="p_t" required>
+
+            <label>Company/Brand Name</label>
+            <input type="text" name="c_n" required>
+
+            <label for="productDescription">Product Description</label>
+            <textarea  name="p_d"  rows="4" required></textarea>
+
+            <label>Fund Required(In Rs)</label>
+            <input type="number" name="fund" required>
+
+            <label>Equity Offered(In %)</label>
+            <input type="number" name="e_o" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Contact</label>
+            <input type="number" name="no" required>
+
+            <label>UPI ID</label>
+            <input type="text" name="upi" required/>
+
+            <label>Location</label>
+            <textarea name="loc"  rows="4" required></textarea>
+
+            <label>Companylogo</label>
+            <input type="file"  name="c_l" required/><br/>
+
+            <label>Products Photos</label>
+            <input type="file" name="p_i"  multiple required/><br/>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">InvestNook</div>
+        <p>&copy; 2024 InvestNook. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

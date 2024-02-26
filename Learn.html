@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InvestNook</title>
+    <style>
+      body {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .main-content {
+        text-align: center;
+        margin: 2vw;
+        font-size: 2vw;
+        color: white;
+      }
+
+      .flexvideo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vw;
+        padding: 2vw;
+        background-color: #fff;
+        box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+        border-radius: 1vw;
+        margin: 2vw;
+      }
+
+      .flexvideo iframe {
+        width: calc(
+          33.33% - 2vw
+        ); /* 33.33% width for each video, subtracting gap */
+        height: 22.5vw;
+        border: none;
+        margin-bottom: 2vw;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .flexvideo iframe {
+          width: 100%; /* Full width for smaller screens */
+        }
+
+        .main-content,
+        .footer {
+          font-size: 4vw;
+        }
+      }
+
+      .footer {
+        padding: 2vw;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+      }
+
+      .footer .footer-logo {
+        font-size: 2vw;
+      }
+
+      .footer p {
+        margin: 1vw 0;
+      }
+
+      body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Ensure you have imported the Inter font */
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Ensure you have imported the Inter font */
+    background-color: black;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: beige;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid beige;
+}
+    </style>
+    <link rel="stylesheet" href="#" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <a href="#" style="font-size: 30px; color: beige;">INVE$TNOOK</a>
+      </div>
+      <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Learn.html">Learn</a></li>
+            <li><a href="Investor Panel.html">Investor Panel</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Product_retrive.php">Products</a></li>
+            <li><a href="login.html">Sign In</a></li>
+          </ul>
+      </nav>
+  </header>
+    <div class="main-content">
+      <h1>Learn with InvestNook</h1>
+      <p>Explore educational videos to enhance your knowledge.</p>
+    </div>
+
+    <div class="flexvideo">
+      <!-- Video 1 -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dJQn4DqzMVQ?si=2aFqqb74-wYfRjh9"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- Video 2 -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/FZygrBPSaV0?si=SAtCHL0827pjTriS"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- Video 3 -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Qa_4c9zrxf0?si=Z-zE4C-ls2KwDVAU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <!-- Repeat the above block for the next set of three videos -->
+
+      <!-- Video 4 -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/fCW-Ulm_2HM?si=rP-VNBtk73Bjjhbd"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- Video 5 -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Cc0VVWbhGNs?si=OqPqnHVPYKbXDXFP"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- Video 6 -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Z8zzYjV8r04?si=ntvYMLHAueeGfUIj"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <!-- Repeat the above block for the next set of three videos -->
+
+      <!-- Video 7 -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Rf4rU1hwQXc?si=x2Bm03txtQMqUpgf"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- Video 8 -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/H5zw7xaEILc?si=niX_oG3iywZ9OsQ1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- Video 9 -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/U2-vDG54Btc?si=MPaPSZgOhspgipmm"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="footer">
+      <div class="footer-logo">InvestNook</div>
+      <p>
+        &copy; 2024 InvestNook. All rights reserved. |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
+
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".menu").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event With InvestNook</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        body {
+            background-color: #f1e1e0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #333;
+            margin-bottom: 20px; /* Add margin to create space */
+            margin-right: 40px;
+        }
+
+        .form-container {
+            padding: 30px;
+            width: 500px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+        }
+
+        label {
+            margin-top: 20px;
+            display: block;
+            font-size: 18px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .submit {
+            background-color: #06ed06;
+            color: white;
+            font-size: 20px;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit:hover {
+            background-color: #057805;
+        }
+
+        /* Media Query for mobile devices */
+        @media only screen and (max-width: 600px) {
+            h1 {
+                margin-right: 0;
+                font-size: 20px;
+            }
+            .form-container {
+                width: 80%;
+            }
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="#">INVE<span style="font-size: 40px;background-image: linear-gradient(to right, #2C3E50, #797975);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;">$</span>TNOOK</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Investor Panel.html">Investor Panel</a></li>
+            <li><a href="Product_retrive.php">Products</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Learn.html">Learn</a></li>
+          </ul>
+        </nav>
+      </header> 
+    <h1>Create Event With InvestNook</h1>
+    <center>
+    <div class="form-container">
+        <form method="get" action="Submithandle.php">
+            <label>Enter Event No</label>
+            <input type="number" name="a1" required/><br/>
+            <label>Enter Event Name</label>
+            <input type="text" name="a" required/><br/>
+            <label>Enter Category</label>
+            <select name="a2">
+                <option value="Investor">Investor</option>
+                <option value="Small Business">Small Business</option>
+            </select>
+            <label>Enter Business/Investor Name</label>
+            <input type="text" name="b" required/><br/>
+            <label>Enter Meeting-Platform</label>
+            <input type="text" name="c" required/><br/>
+            <label>Enter Meeting-Id</label>
+            <input type="text" name="d" required/><br/>
+            <input type="submit" class="submit"/>
+        </form>
+    </div>
+    </center>
+    <div class="footer">
+        <div class="footer-logo">InvestNook</div>
+        <p>&copy; 2024 InvestNook. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+</body>
+</html>
